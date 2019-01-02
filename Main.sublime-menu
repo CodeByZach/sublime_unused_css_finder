@@ -1,87 +1,140 @@
 [
-    {
-        "caption": "Preferences",
-        "children": [
-            {
-                "caption": "Package Settings",
-                "children": [
-                    {
-                        "caption": "UnusedCssFinder",
-                        "children": [
-                            {
-                                "args": {
-                                    "file": "${packages}/UnusedCssFinder/UnusedCssFinder.sublime-settings"
-                                },
-                                "caption": "Settings \u2013 Default",
-                                "command": "open_file"
-                            },
-                            {
-                                "args": {
-                                    "file": "${packages}/User/UnusedCssFinder.sublime-settings"
-                                },
-                                "caption": "Settings \u2013 User",
-                                "command": "open_file"
-                            },
-                            {
-                                "caption": "-"
-                            },
-                            {
-                                "caption": "Key Bindings – Default",
-                                "command": "open_file", "args":
-                                {
-                                    "file": "${packages}/UnusedCssFinder/Default (OSX).sublime-keymap",
-                                    "platform": "OSX"
-                                }
-                            },
-                            {
-                                "caption": "Key Bindings – User",
-                                "command": "open_file", "args":
-                                {
-                                    "file": "${packages}/User/Default (OSX).sublime-keymap",
-                                    "platform": "OSX"
-                                }
-                            },
-                            {
-                                "caption": "Key Bindings – Default",
-                                "command": "open_file", "args":
-                                {
-                                    "file": "${packages}/UnusedCssFinder/Default (Linux).sublime-keymap",
-                                    "platform": "Linux"
-                                }
-                            },
-                            {
-                                "caption": "Key Bindings – User",
-                                "command": "open_file", "args":
-                                {
-                                    "file": "${packages}/User/Default (Linux).sublime-keymap",
-                                    "platform": "Linux"
-                                }
-                            },
-                            {
-                                "caption": "Key Bindings – Default",
-                                "command": "open_file", "args":
-                                {
-                                    "file": "${packages}/UnusedCssFinder/Default (Windows).sublime-keymap",
-                                    "platform": "Windows"
-                                }
-                            },
-                            {
-                                "caption": "Key Bindings – User",
-                                "command": "open_file", "args":
-                                {
-                                    "file": "${packages}/User/Default (Windows).sublime-keymap",
-                                    "platform": "Windows"
-                                }
-                            }
-                        ],
-                        "id": "unusedcssfinder"
-                    }
-                ],
-                "id": "package-settings",
-                "mnemonic": "P"
-            }
-        ],
-        "id": "preferences",
-        "mnemonic": "n"
-    }
+	{
+		"caption": "Tools",
+		"mnemonic": "T",
+		"id": "tools",
+		"children":
+		[
+			{
+				"id": "packages",
+				"caption": "Packages",
+				"children":
+				[
+					{
+						"id": "unusedcssfinder",
+						"caption": "Unused CSS Finder",
+						"children":
+						[
+							{
+								"caption": "Find Unused Selectors",
+								"command": "unused_css_finder"
+							},
+							{
+								"caption": "Highlight Results",
+								"children":
+								[
+									{
+										"caption": "True",
+										"command": "check_highlight_selectors"
+									},
+									{
+										"caption": "False",
+										"command": "uncheck_highlight_selectors"
+									}
+								]
+							},
+							{
+								"caption": "Delete After Search",
+								"children":
+								[
+									{
+										"caption": "True",
+										"command": "check_auto_delete"
+									},
+									{
+										"caption": "False",
+										"command": "uncheck_auto_delete"
+									}
+								]
+							},
+							{ "caption": "-" },
+							{
+								"caption": "Add Selector To Ignore List",
+								"command": "add_to_ignore_list"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "preferences",
+		"mnemonic": "n",
+		"caption": "Preferences",
+		"children":
+		[
+			{
+				"id": "package-settings",
+				"mnemonic": "P",
+				"caption": "Package Settings",
+				"children":
+				[
+					{
+						"id": "unusedcssfinder",
+						"caption": "UnusedCssFinder",
+						"children":
+						[
+							{
+								"caption": "Settings",
+								"command": "edit_settings", "args": {
+									"base_file": "${packages}/UnusedCssFinder/UnusedCssFinder.sublime-settings",
+									"default": "{\n$0\n}\n"
+								}
+							},
+							{ "caption": "-" },
+							{
+								"caption": "Key Bindings – Default",
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/UnusedCssFinder/Default (OSX).sublime-keymap",
+									"platform": "OSX"
+								}
+							},
+							{
+								"caption": "Key Bindings – User",
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/User/Default (OSX).sublime-keymap",
+									"platform": "OSX"
+								}
+							},
+							{
+								"caption": "Key Bindings – Default",
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/UnusedCssFinder/Default (Linux).sublime-keymap",
+									"platform": "Linux"
+								}
+							},
+							{
+								"caption": "Key Bindings – User",
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/User/Default (Linux).sublime-keymap",
+									"platform": "Linux"
+								}
+							},
+							{
+								"caption": "Key Bindings – Default",
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/UnusedCssFinder/Default (Windows).sublime-keymap",
+									"platform": "Windows"
+								}
+							},
+							{
+								"caption": "Key Bindings – User",
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/User/Default (Windows).sublime-keymap",
+									"platform": "Windows"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
 ]

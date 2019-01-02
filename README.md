@@ -1,4 +1,4 @@
-# UnusedCssFinder-Sublime
+# UnusedCssFinder
 > Only supports **Sublime Text 3**.
 
 Sublime plugin to find unused css names
@@ -49,7 +49,7 @@ for Windows/Linux:
 
 ### Project Settings
 
-You can also define all the above settings in an individual "unused_css.cfg" file for each project, that needs to be located in the projects rootpath. All settings in the file will be appended to the default/user settings or override the settings, if it's a boolean value. 
+You can also define all the above settings in an individual "unused_css.cfg" file for each project, that needs to be located in the projects rootpath. All settings in the file will be appended to the default/user settings or override the settings, if it's a boolean value.
 
 ### Change Log
 
