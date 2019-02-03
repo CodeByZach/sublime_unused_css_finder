@@ -82,54 +82,20 @@
 									"default": "{\n$0\n}\n"
 								}
 							},
+							{
+								"caption": "Key Bindings",
+								"command": "edit_settings",
+								"args":
+								{
+									"base_file": "${packages}/UnusedCssFinder/Default (${platform}).sublime-keymap",
+									"default": "[\n$0\n]\n"
+								}
+							},
 							{ "caption": "-" },
 							{
-								"caption": "Key Bindings – Default",
-								"command": "open_file", "args":
-								{
-									"file": "${packages}/UnusedCssFinder/Default (OSX).sublime-keymap",
-									"platform": "OSX"
-								}
-							},
-							{
-								"caption": "Key Bindings – User",
-								"command": "open_file", "args":
-								{
-									"file": "${packages}/User/Default (OSX).sublime-keymap",
-									"platform": "OSX"
-								}
-							},
-							{
-								"caption": "Key Bindings – Default",
-								"command": "open_file", "args":
-								{
-									"file": "${packages}/UnusedCssFinder/Default (Linux).sublime-keymap",
-									"platform": "Linux"
-								}
-							},
-							{
-								"caption": "Key Bindings – User",
-								"command": "open_file", "args":
-								{
-									"file": "${packages}/User/Default (Linux).sublime-keymap",
-									"platform": "Linux"
-								}
-							},
-							{
-								"caption": "Key Bindings – Default",
-								"command": "open_file", "args":
-								{
-									"file": "${packages}/UnusedCssFinder/Default (Windows).sublime-keymap",
-									"platform": "Windows"
-								}
-							},
-							{
-								"caption": "Key Bindings – User",
-								"command": "open_file", "args":
-								{
-									"file": "${packages}/User/Default (Windows).sublime-keymap",
-									"platform": "Windows"
-								}
+								"caption": "README",
+								"command": "open_file",
+								"args": { "file": "${packages}/UnusedCssFinder/README.md" }
 							}
 						]
 					}
