@@ -12,7 +12,7 @@
 				[
 					{
 						"id": "unusedcssfinder",
-						"caption": "Unused CSS Finder",
+						"caption": "Unused​Css​Finder",
 						"children":
 						[
 							{
@@ -77,18 +77,17 @@
 						[
 							{
 								"caption": "Settings",
-								"command": "z_edit_settings",
+								"command": "edit_settings",
 								"args":
 								{
 									"base_file": "${packages}/UnusedCssFinder/UnusedCssFinder.sublime-settings",
-									"user_file": "${packages}/User/UnusedCssFinder/UnusedCssFinder.sublime-settings",
 									"default": "{\n\t$0\n}\n"
 								}
 							},
 							{ "caption": "-" },
 							{
 								"caption": "Key Bindings",
-								"command": "z_edit_settings",
+								"command": "edit_settings",
 								"args":
 								{
 									"base_file": "${packages}/UnusedCssFinder/Default (${platform}).sublime-keymap",

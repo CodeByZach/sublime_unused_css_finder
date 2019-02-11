@@ -1,0 +1,8 @@
+[
+	{ "caption": "UnusedCssFinder: Find Unused Selectors", "command": "unused_css_finder" },
+	{ "caption": "UnusedCssFinder: Highlight Results (True)", "command": "check_highlight_selectors" },
+	{ "caption": "UnusedCssFinder: Highlight Results (False)", "command": "uncheck_highlight_selectors" },
+	{ "caption": "UnusedCssFinder: Delete After Search (True)", "command": "check_auto_delete" },
+	{ "caption": "UnusedCssFinder: Delete After Search (False)", "command": "uncheck_auto_delete" },
+	{ "caption": "UnusedCssFinder: Add Selector To Ignore List", "command": "add_to_ignore_list" }
+]
