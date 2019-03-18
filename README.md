@@ -98,4 +98,4 @@ v1.1.0
 
 ### License
 
-This work is licensed under the [The MIT License](LICENSE.md).
+This work is licensed under the [The MIT License](LICENSE).
