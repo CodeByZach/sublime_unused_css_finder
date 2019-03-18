@@ -15,9 +15,9 @@ Might run slow on big projects, do not hesitate to send me improvement recommend
 
 ### Usage
 
-`Inline CSS`: Open the file and press `ctrl` + `u` + `f` to find css declarations without any occurence in the current file.
+`Inline CSS`: Open the file and press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>U</kbd>+<kbd>F</kbd> to find css declarations without any occurence in the current file.
 
-`Extern CSS`: Open any `.css` file and press `ctrl` + `u` + `f` to find css declarations without any occurence in the current project. If no project is active, the search takes place at the css file location.
+`Extern CSS`: Open any `.css` file and press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>U</kbd>+<kbd>F</kbd> to find css declarations without any occurence in the current project. If no project is active, the search takes place at the css file location.
 
 ### Default Key Bindings
 
