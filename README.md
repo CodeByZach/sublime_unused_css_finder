@@ -1,11 +1,7 @@
 # UnusedCssFinder
-> Only supports **Sublime Text 3**.
+[![Latest Release](https://img.shields.io/github/tag/EatBreatheCode/sublime_unused_css_finder.svg?label=version)](https://github.com/EatBreatheCode/sublime_unused_css_finder/releases)
 
-Sublime plugin to find unused css names
-
-Author: Jannis Harder: jannisharder@hotmail.de
-
-Last modified: 15 August 2016
+Sublime Text plugin to find unused css names
 
 Plugin to find unused css declarations in a project. Searches for all id and class names inside current open project or file directory if no project is currently open. All css names that do not occur once in any other .php, .html, .xhtml or .js file will be selected.
 
@@ -31,6 +27,7 @@ for Windows/Linux:
 { "keys": ["ctrl+u", "ctrl+f"], "command": "unused_css_finder"}
 ```
 
+
 ### Settings
 
 - `unused_css_root_folder`: define a projects root location if ti deviates from the sublime projects root location.
@@ -51,50 +48,6 @@ for Windows/Linux:
 
 You can also define all the above settings in an individual "unused_css.cfg" file for each project, that needs to be located in the projects rootpath. All settings in the file will be appended to the default/user settings or override the settings, if it's a boolean value.
 
-### Change Log
-
-v1.3.3
-
-- fixed a bug for combinator selectors
-
-v1.3.2
-
-- Optimized the way, unused css declarations are selected.
-- Clean selection/deletion in multiple declarations
-
-v1.3.1
-
-- fixed a bug for inline css
-
-v1.3.0
-
-- settings can now be configured over a project specific file "unused_css.cfg" that has to be located in a projects root path
-- added 'unused_css_ignore_selectors' setting: Every element in this array will be ignored in the search and never be stated as non occured selector. Can also be defined as id or class selector, e.g. "#example", ".example", "example"
-- added 'unused_css_delete_on_search' setting: Every unused css selector that was found during the search will be removed after the search
-- switched default behaviour of plugin. Instead of highlighting every unused selector, they will be selected via cursor, to be able to remove them with one backspace press
-- added 'unused_css_highlight_selectors' setting: switch to old behaviour, that unused selectors will be highlighted instead of selected via cursor
-- added plugin to sublime context menu on right click to be able to configure some settings and also run the command without shortcut
-- most of these changes are based on the ideas from NoxNoctis2, thanks for that
-
-v1.2.2
-
-- optimized the search patterns to only find the exact selector names and no words where they occur as substring
-
-v1.2.1
-
-- fixed a bug in the plugin default settings file
-- added debugging functionality
-
-v1.2.0
-
-- the plugin now works for inline css as well
-- added configuration path into sublime menu: "Preferences/Package Settings/UnusedCssFinder/"
-- Added default key bindings to the project
-
-v1.1.0
-
-- Added settings to define folders, in which the search takes place
-- Fixed a bug to truely search asynchronously
 
 ### License
 
