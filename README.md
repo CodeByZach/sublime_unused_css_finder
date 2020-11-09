@@ -1,5 +1,5 @@
 # UnusedCssFinder
-[![Latest Release](https://img.shields.io/github/tag/EatBreatheCode/sublime_unused_css_finder.svg?label=version)](https://github.com/EatBreatheCode/sublime_unused_css_finder/releases)
+[![Latest Release](https://img.shields.io/github/tag/CodeByZach/sublime_unused_css_finder.svg?label=version)](https://github.com/CodeByZach/sublime_unused_css_finder/releases)
 
 Sublime Text plugin to find unused css names
 
