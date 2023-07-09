@@ -6,52 +6,34 @@
 		"children":
 		[
 			{
-				"id": "packages",
 				"caption": "Packages",
+				"id": "packages",
 				"children":
 				[
 					{
-						"id": "unusedcssfinder",
 						"caption": "UnusedCssFinder",
+						"id": "unusedcssfinder",
 						"children":
 						[
-							{
-								"caption": "Find Unused Selectors",
-								"command": "unused_css_finder"
-							},
+							{ "caption": "Find Unused Selectors", "command": "unused_css_finder" },
 							{
 								"caption": "Highlight Results",
 								"children":
 								[
-									{
-										"caption": "True",
-										"command": "check_highlight_selectors"
-									},
-									{
-										"caption": "False",
-										"command": "uncheck_highlight_selectors"
-									}
+									{ "caption": "True",  "command": "check_highlight_selectors" },
+									{ "caption": "False", "command": "uncheck_highlight_selectors" }
 								]
 							},
 							{
 								"caption": "Delete After Search",
 								"children":
 								[
-									{
-										"caption": "True",
-										"command": "check_auto_delete"
-									},
-									{
-										"caption": "False",
-										"command": "uncheck_auto_delete"
-									}
+									{ "caption": "True",  "command": "check_auto_delete" },
+									{ "caption": "False", "command": "uncheck_auto_delete" }
 								]
 							},
 							{ "caption": "-" },
-							{
-								"caption": "Add Selector To Ignore List",
-								"command": "add_to_ignore_list"
-							}
+							{ "caption": "Add Selector To Ignore List", "command": "add_to_ignore_list" }
 						]
 					}
 				]
@@ -59,20 +41,20 @@
 		]
 	},
 	{
-		"id": "preferences",
-		"mnemonic": "n",
 		"caption": "Preferences",
+		"mnemonic": "n",
+		"id": "preferences",
 		"children":
 		[
 			{
-				"id": "package-settings",
-				"mnemonic": "P",
 				"caption": "Package Settings",
+				"mnemonic": "P",
+				"id": "package-settings",
 				"children":
 				[
 					{
-						"id": "unusedcssfinder",
 						"caption": "UnusedCssFinder",
+						"id": "unusedcssfinder",
 						"children":
 						[
 							{
@@ -87,7 +69,7 @@
 							{ "caption": "-" },
 							{
 								"caption": "Key Bindings",
-								"command": "edit_settings",
+								"command": "z_edit_settings",
 								"args":
 								{
 									"base_file": "${packages}/UnusedCssFinder/Default (${platform}).sublime-keymap",
@@ -104,28 +86,7 @@
 										"command": "z_edit_settings",
 										"args":
 										{
-											"is_parent_setting": "1",
 											"base_file": "${packages}/UnusedCssFinder/Context.sublime-menu",
-											"default": "[\n\t$0\n]\n"
-										}
-									},
-									{
-										"caption": "Side Bar Menu",
-										"command": "z_edit_settings",
-										"args":
-										{
-											"is_parent_setting": "1",
-											"base_file": "${packages}/UnusedCssFinder/Side Bar.sublime-menu",
-											"default": "[\n\t$0\n]\n"
-										}
-									},
-									{
-										"caption": "Tab Menu",
-										"command": "z_edit_settings",
-										"args":
-										{
-											"is_parent_setting": "1",
-											"base_file": "${packages}/UnusedCssFinder/Tab Context.sublime-menu",
 											"default": "[\n\t$0\n]\n"
 										}
 									},
@@ -134,8 +95,43 @@
 										"command": "z_edit_settings",
 										"args":
 										{
-											"is_parent_setting": "1",
 											"base_file": "${packages}/UnusedCssFinder/Main.sublime-menu",
+											"default": "[\n\t$0\n]\n"
+										}
+									},
+									{
+										"caption": "Side Bar Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"base_file": "${packages}/UnusedCssFinder/Side Bar.sublime-menu",
+											"default": "[\n\t$0\n]\n"
+										}
+									},
+									{
+										"caption": "Side Bar Open Files Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"base_file": "${packages}/UnusedCssFinder/Tab Sidebar Context.sublime-menu",
+											"default": "[\n\t$0\n]\n"
+										}
+									},
+									{
+										"caption": "Tab Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"base_file": "${packages}/UnusedCssFinder/Tab Context.sublime-menu",
+											"default": "[\n\t$0\n]\n"
+										}
+									},
+									{
+										"caption": "Widget Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"base_file": "${packages}/UnusedCssFinder/Widget Context.sublime-menu",
 											"default": "[\n\t$0\n]\n"
 										}
 									}
@@ -146,7 +142,6 @@
 								"command": "z_edit_settings",
 								"args":
 								{
-									"is_parent_setting": "1",
 									"base_file": "${packages}/UnusedCssFinder/Default.sublime-commands",
 									"default": "[\n\t$0\n]\n"
 								}
