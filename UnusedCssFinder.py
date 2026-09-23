@@ -174,7 +174,7 @@ class UnusedCssFinderCommand(sublime_plugin.TextCommand):
 
 					# <css_name>: to get the css selector name
 					# <css_addition>: to include all possible css selector additions to the selection:
-					selectors = re.finditer(re.compile('(?P<css_name>(?<=\.|#)[\w-]*)(?P<css_addition>[^,{.#]*)', re.DOTALL), declaration)
+					selectors = re.finditer(re.compile(r'(?P<css_name>(?<=\.|#)[\w-]*)(?P<css_addition>[^,{.#]*)', re.DOTALL), declaration)
 					selector = [0, 0]
 					for selector_match in selectors:
 						selector = [selector_match.start('css_name')-1, selector_match.end('css_name'), selector_match.end('css_addition'), declaration[selector_match.start('css_name')-1:selector_match.end('css_name')]]
@@ -259,7 +259,7 @@ class UnusedCssFinderCommand(sublime_plugin.TextCommand):
 					if(css_inside_file):
 						fileContent = re.sub(re.compile('<style[^>]*>.*?</style>', re.DOTALL), '', fileContent)
 
-					return (re.search('(?<!\w)('+search_for+')(?!\w)', fileContent) is not None)
+					return (re.search(r'(?<!\w)('+search_for+r')(?!\w)', fileContent) is not None)
 				except UnicodeDecodeError:
 					return False
 			return False
